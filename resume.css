@@ -9,13 +9,12 @@ html {
 }
 
 
-
 main {
   max-width: 60rem;
   margin: 0 auto;
 }
 
-p {
+p, dd, dt, a {
   line-height: 1.5;
 }
 
@@ -59,18 +58,19 @@ p a {
   font-weight: normal;
 }
 
-header.primary > h1 {
+header.primary > * {
   margin-bottom: .5rem;
 }
 
-header.primary > p {
-  margin-top: 0px;
-  font-size: 1.75rem;
+header.primary {
+    margin-bottom: 1rem;
 }
 
-header.primary {
-  margin-bottom: 1rem;
+header .contacts > dd {
+    margin-left: 0;
+    margin-bottom: .5rem;
 }
+
 
 .print-only {
   display: none;
