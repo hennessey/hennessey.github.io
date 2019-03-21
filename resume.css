@@ -32,8 +32,7 @@ h3 {
   font-size: 1.15rem;
 }
 
-/* Prevent default behavior of link underline cutting off
-letter descenders */
+/* Prevent default behavior of link underline cutting off letter descenders */
 p a {
   text-decoration: none;
   text-shadow: 0.05em 0 0 #fff, -0.05em 0 0 #fff, 0 0.05em 0 #fff, 0 -0.05em 0 #fff, 0.1em 0 0 #fff, -0.1em 0 0 #fff, 0 0.1em 0 #fff, 0 -0.1em 0 #fff;
@@ -77,6 +76,7 @@ header .contacts > dd {
   display: none;
 }
 
+
 @media print {
   html {
     font-size: 50%;
@@ -84,6 +84,11 @@ header .contacts > dd {
 
   body > *:not(main) {
     display: none;
+  }
+
+  a[href] {
+    text-decoration: none;
+    color: initial; 
   }
 
   .print-only {
